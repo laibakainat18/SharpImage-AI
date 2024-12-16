@@ -1,0 +1,7 @@
+streamlit
+numpy
+opencv-python-headless
+matplotlib
+tensorflow==2.10.0
+onnxruntime
+pillow
