@@ -1,7 +1,9 @@
 streamlit
-numpy
-opencv-python-headless
-matplotlib
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+matplotlib==3.9.3
 tensorflow==2.10.0
-onnxruntime
-pillow
+onnxruntime==1.20.1
+pillow==11.0.0
+streamlit-stl==0.0.2
+trimesh==4.5.3
