@@ -310,16 +310,13 @@ if __name__ == "__main__":
         st.session_state.selected_option = None
 
     # Display buttons only if no option is selected yet
-    # st.markdown("### Try Now")
-    # col1, col2, col3, col4, col5 = st.columns(5)
+    st.markdown("### Try Now")
+    # col1, col2 = st.columns(2)
     if st.session_state.selected_option is None:
-        # with col3:
-            st.markdown("### Try Now")
-
-            if st.button("X-Ray"):
-                st.session_state.selected_option = "xray"
-            if st.button("Brain Tumor"):
-                st.session_state.selected_option = "brain_tumor"
+        if st.button("X-Ray"):
+            st.session_state.selected_option = "xray"
+        if st.button("Brain Tumor"):
+            st.session_state.selected_option = "brain_tumor"
 
     # If user selected X-Rays
     if st.session_state.selected_option == "xray":
@@ -389,5 +386,3 @@ if __name__ == "__main__":
         """,
         unsafe_allow_html=True,
     )
-
-
